@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>reverie; the wandering mind</title>
+    <style>
+      @font-face {
+        font-family: "Pinyon";
+        font-weight: normal;
+        font-style: normal;
+        font-display: auto;
+        src: url("PinyonScript-Regular.woff") format("woff"), url("PinyonScript-Regular.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Neuzeit";
+        font-weight: normal;
+        font-style: normal;
+        font-display: auto;
+        src: url("NeuzeitGroteskRegular.woff") format("woff"), url("NeuzeitGroteskRegular.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "SourceSerif";
+        font-weight: normal;
+        font-style: normal;
+        font-display: auto;
+        src: url("SourceSerif4-LightItalic.woff") format("woff"), url("SourceSerif4-LightItalic.woff2") format("woff2");
+      }
+
+      
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: url('oog3.png'), auto;
+      }
+
+      body {
+        font-family: "Neuzeit", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        padding: 40px;
+      }
+
+      .container {
+        max-width: 600px;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Pinyon", serif;
+        font-size: 60px;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+      }
+
+      .definition {
+        font-family: "Neuzeit", sans-serif;
+        font-size: 18px;
+        line-height: 1;
+        color: #333;
+        margin-bottom: 40px;
+      }
+
+      .enter-link {
+        font-family: "Neuzeit", sans-serif;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid rgb(2, 2, 2);
+        display: inline-block;
+        transition: all 0.3s;
+        position: relative;
+      }
+
+      .enter-link:hover {
+        background: rgb(0, 0, 0);
+        color: white;
+      }
+
+      .enter-link::after {
+        content: " 'It seemed like all of creation was mapped out above and I was drawn from the laughter of the other children into a stillness I aspired to master. Here one could hear a seed form or the soul fold like a hankerchief.' - Patti Smith, Woolgathering, 1992";
+        font-family: "SourceSerif";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        background: transparent;
+        width: 300px;
+        font-size: 10px;
+        line-height: 1.6;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        margin-left: 20px;
+        z-index: 100;
+        text-align: left;
+        color: #333;
+      }
+
+
+      .enter-link:hover::after {
+        opacity: 1;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Woolgathering</h1>
+      <div class="definition">
+        <p><strong>: indulgence in idle daydreaming</strong></p>
+        <br>
+        <p>Once literally referred to the act of gathering loose tufts of wool that had gotten caught on bushes and fences as sheep passed by, gatherers wandered aimlessly around the field, lost in thought.</p> 
+        <br>
+        <br>
+      <a href="gallery.html" class="enter-link">Explore the field</a>
+    </div>
+  </body>
+</html>
